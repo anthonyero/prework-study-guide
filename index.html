@@ -12,7 +12,60 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <ul>
+          <li>The <b>head</b> section of a document contains important metadata including the title of the page that will appear as text displayed on the tab. </li>
+          <li>The <b>body</b> element defines the body of the document which contains the content that is visible to the user. All of the content that we want to display to users must be inside the <b>body</b> element.</li>
+          <li> Although there are some elements that are found within a set of opening and closing tags such as <b>head</b>, <b>body</b>, and <b>p</b>, others such as <b>img</b>, <b>br</b> contain all relevent text within one set of "< >"</li>
+          <li> Notice that there are <b>child elements</b> and <b>parent elements</b></li>
+          <li>The biggest heading <b>h1</b> should only appear once on each page: we should only have one h1 per page</li>
+        </ul>
+      </section>
+
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>Enter your CSS notes here</li>
+        </ul>
+      </section>
+
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <ul>
+          <li><b>git status</b>: checks what branch we are currently on</li>
+          <li><b>git checkout</b>: switches to a new branch. This reminds me of the "cd" functionality in the terminal</li>
+          <li><b>git checkout -b branch-name</b>: creates a new branch and switches to it. The "-b" tells Git to create a new branch</li>
+          <li>When creating a new branch, it is good practice to give the branch a specific but concise name and preface it with whether the branch is for a feature. For example, the creation and movement to a new branch may look like "git checkout -b feature/adding-new-branch"</li>
+          <li><b>git pull origin main</b>: Pulls down the latest main branch. To my knowledge, we want to ensure we have the latest repo/branch before we start working to ensure we do not advance on outdated code</li>
+          <li><b>The Git Flow</b></li>
+            <ol>
+              <li>Make sure that we are on the correct branch from the command line. Use the <b>git status</b> and <b>git checkout branch-name</b> to get there</li>
+              <li>We have to add the changed files in our working directory to the staging area of Git. Use the following command in the terminal to stage changes: <b>git add -A</b>. We use "add -A" command to commmit all files in the working branch</li>
+              <li>Now that all of our changes have been staged, we can commit them to our repository. Use the following command in the terminal to commit the changes: <b>git commit -m "comment about updates in these changes"</b>. We use the "-m" flag to associate a message with our commit. Commit messages should be short descriptive messages of the changes implemented. Once completed, our Git repository is now up to date with our working directory. We should receive output in the terminal suggesting changes/insertions and, I'm guessing, removals when appropriate</li>
+              <li>Next, make sure that our current branch is up to date before opening a pull request. We need to sync our local branch with the remote branch in Github. This is especially important in a team environment in case a team member has added a new feature to the project. The process of syncing and emrging code into the Github repo is how the project gets continually updated with more features and content from different team members. Use the following command in the terminal to pull in the base branch: <b>git pull origin main</b>. It's a good habit to always pull the base branch into your feature branch before pushing up any code. You should see something simliar to the following in your terminal if your branches are in sync: "Already up to date." </li>
+              <li>Push all of our changes by using the following command: <b>git push origin branch-name</b></li>
+              <li>Now, navigate to the repository on Github in the browser. We need merge our feature branch into the base branch so that in a real work situation other team members can upate their feature branches with an updated version of the project. Once you are in the repository, navigate to the relevant branch using the navigation tabs</li>
+              <li>Click the "Pull requests" tab at the top</li>
+              <li>Once on the pull requests page, find and click the "New pull request" button</li>
+              <li>Now we need to compare the two branches that we want to merge. The base branch that we want to merge into should come first. In our case, this is the "main" branch. We want to merge our "feature/branch-name", so that is our compare branch.</li>
+              <li>Once on the pull request form, give your PR a title and a short description of the changes</li>
+              <li>Click on the "Create pull request button"</li>
+              <li>It is time to merge our new feature into our main codebase! Click the "Merge pull request" button and confirm</li>
+              <li>Navigate back to the "main" branch in GitHub and you should see that the relevant files/changes in the main branch</li>
+              <li>Let's open our terminal and update our local repository with the new merged-in feature. Use the following commands in the terminal <b>git checkout main</b> then <b>git pull origin main</b></li>
+              <li>Close the relevant issue on GitHub since we have merged in the feature associated with it. </li>
+            </ol>
+        </ul>
+      </section>
+
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>Enter your JavaScript notes here</li>
+        </ul>
+      </section>
+
     </main>
 
     <footer>
